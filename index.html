@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DnD Character Generator</title>
+</head>
+<body>
+    <div class="characterContainer">
+        <div class="characterInput">
+                <h2>General Info and Starting Equiptment</h2>
+                <label for="firstName">First Name</label>
+                    <input id="firstName" value='firstName' name="name" type="text">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" value='lastName' name="name" type="text">
+                    <label for="gender">Gender</label>
+                    <input id="gender" value='gender' name="gender" type="text">
+                
+                <label for="race">Character Race</label>
+                    <select name="race" id="race">
+                        <option value="Dragonborn">Dragonborn</option>
+                        <option value="Dwarf">Dwarf</option>
+                        <option value="Elf">Elf</option>
+                        <option value="Gnome">Gnome</option>
+                        <option value="Half-Elf">Half-Elf</option>
+                        <option value="Halfling">Halfling</option>
+                        <option value="Half-Orc">Half-Orc</option>
+                        <option value="Human">Human</option>
+                        <option value="Tiefling">Tiefling</option>
+                    </select>
+
+                <label for="class">Character Class</label>
+                    <select name="class" id="class">
+                        <option value="Barbarian">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                    </select> 
+
+                <label for="personality">Character Personality</label>
+                    <input id="personality" value="none" name="personality" type="text">
+
+                <label for="inspiration">Character Inspiration</label>
+                    <input id="inspiration" value="none" name="inspiration" type="text">
+
+                <label for="background">Character Background</label>
+                    <input id="background" value="none" name="background" type="text">
+
+                <label for="customStartingEquiptment"></label>
+                    <textarea name="equipment" id="customStarting" cols="30" rows="10" placeholder='Custom Starting Equiptment(if applicable)'></textarea>
+                
+                <div class="startingmoney">
+                    <h2>Money</h2>
+                    <label for="platinum">Platinum: </label>
+                        <input id="platinum" name="money" value="platinum" type="text">
+                    <label for="gold">Gold: </label>
+                        <input id="gold" name="money" value="gold" type="text">
+                    <label for="silver">Silver: </label>
+                        <input id="silver" name="money" value="silver" type="text">
+                    <label for="copper">Copper: </label>
+                        <input id="copper" name="money" value="copper" type="text">
+                </div>
+
+                <div class="abilities">
+                    <h2>Ability Scores</h2>
+                    <label for="strength">Strength: </label>
+                        <input id="strength" name="ability" value="10" type="text">
+                        <span class="abilityModifyer" id="strMod"></span>
+                    <label for="dexterity">Dexterity: </label>
+                        <input id="dexterity" name="ability" value="10" type="text">
+                        <span class="abilityModifyer" id="dexMod"></span>
+                    <label for="constitution">Constitution: </label>
+                        <input id="constitution" name="ability" value="10" type="text">
+                        <span class="abilityModifyer" id="conMod"></span>
+                    <label for="intelligence">Intelligence: </label>
+                        <input id="intelligence" name="ability" value="10" type="text">
+                        <span class="abilityModifyer" id="intMod"></span>
+                    <label for="wisdom">Wisdom: </label>
+                        <input id="wisdom" name="ability" value="10" type="text">
+                        <span class="abilityModifyer" id="wisMod"></span>
+                    <label for="charisma">Charisma: </label>
+                        <input id="charisma" name="ability" value="10" type="text">
+                        <span class="abilityModifyer" id="chaMod"></span>
+                </div>
+
+                <button id="submitButton">Create</button>
+            
+            
+            <!-- Container for the character display after creation and future modifications -->
+            <div id="display" class="CharDisplay"></div>
+        
+        </div>
+    </div>
+
+<script type="module" src="script.js"></script>
+<!-- <script src="./script.js"></script> -->
+</body>
+</html>

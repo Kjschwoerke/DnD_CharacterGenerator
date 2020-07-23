@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.abilityModifyer {
+    display: block;
+    height: 1.75em;
+    width: 2.25em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    padding: .25em;
+    border: solid black 1px;
+}
