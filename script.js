@@ -30,7 +30,7 @@ console.clear()
         let charisma = document.getElementById('charisma').value
             let chaMod = abilityModifyer(charisma)
 
-     //Create Racial Modifiers
+     //Create Racial Modifiers  
      switch (race){
         case 'Dragonborn':
             strength = parseInt(strength) + 2
